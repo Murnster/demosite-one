@@ -204,6 +204,10 @@ body {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
+.displayItem:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
 .displayPhoto, .displayPhoto img {
     width: 100%;
     border-radius: 10px 10px 0px 0px;
@@ -228,8 +232,102 @@ body {
     background-color: #D8BB5D !important;
 }
 
+.thirdPanel {
+    flex-direction: column;
+}
+
+.thirdPanelHeader {
+    padding: 0px 20px;
+    font-size: 3em;    
+    font-weight: bold;
+}
+
+.thirdPanelSubheading {
+    padding: 15px 20px;
+    font-size: 1.6em;
+}
+
+.thirdPanelHero {
+    height: 80%;
+    width: 80%;
+    position: relative;
+    margin-left: 20px;
+    transition: opacity 1s ease;
+}
+
+.thirdPanelHero1 {
+    background: url('src/person1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.thirdPanelHero2 {
+    background: url('src/person2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.thirdPanelHero3 {
+    background: url('src/person3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.thirdPanelHeroDetails {
+    width: 55%;
+    height: 300px;
+    position: absolute;
+    right: -15%;
+    top: 25%;
+    background-color: #F5F5DD;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#thirdPanelQuote {
+    font-weight: bold;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    transition: opacity 1s ease;
+}
+
+#thirdPanelPerson {
+    font-size: 1.6em;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    transition: opacity 1s ease;
+}
+
+.thirdPanelHeroDetails .btn {
+    margin-left: 20px;
+}
+
+.fade {
+    opacity: 0;
+}
+
 .footer {
-    padding: 50px;
+    padding: 60px;
+    background-color: #F5F5DD;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerTitle {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footerIcons span {
+    margin: 10px;
+    cursor: pointer;
 }
 
 /* Extra small devices (phones, 600px and down) */
