@@ -40,9 +40,9 @@ body {
     font-size: 12px;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
-    height: auto;
-    overflow: auto;
-    line-height: 1.5;
+    /* height: auto; */
+    /* overflow: auto; */
+    /* line-height: 1.5; */
     animation: fadein 0.3s linear;
     -webkit-tap-highlight-color: transparent;
 }
