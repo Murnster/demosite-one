@@ -336,23 +336,6 @@ body {
         display: none;
     }
     
-    .headerHalf {
-        width: 33%;
-    }
-    
-    #thirdPanelQuote {
-        font-size: 2em;
-    }
-    
-    .displayTitle {
-        font-size: 1.2em;
-    }
-    
-    .btn {
-        width: 125px;
-        font-size: 1.1em;
-    }
-    
     .firstPanel {
         flex-direction: column;
     }
@@ -397,6 +380,33 @@ body {
     .displayItem {
         width: 90%;
         margin-bottom: 20px;
+    }
+    
+    .displayTitle {
+        font-size: 1.8em !important;
+    }
+    
+    #thirdPanelQuote {
+        font-size: 1.6em !important;
+    }
+    
+    .thirdPanelHero {
+        width: 90%;
+        height: 70%;
+    }
+    
+    .thirdPanelHeroDetails {
+        height: 350px;
+        top: 10%;
+        right: -2.5%;
+    }
+    
+    .footer {
+        padding: 45px;
+    }
+    
+    .footerTitle {
+        font-size: 1.5em;
     }
 }
 
