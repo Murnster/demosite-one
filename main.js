@@ -5,18 +5,21 @@ function init() {
 
     setTimeout(function() {
         document.querySelector('.initScrim').classList.add('foldTransition')
-    }, 1500)
-
+    }, 1500);
+    
     document.querySelector('.firstPanel').style.height = `${window.innerHeight - 75}px`;
-    document.querySelector('.secondPanel').style.height = `${window.innerHeight - 75}px`;
-    document.querySelector('.thirdPanel').style.height = `${window.innerHeight - 75}px`;
+    
+    if (window.innerWidth > 768) {
+        document.querySelector('.secondPanel').style.height = `${window.innerHeight - 75}px`;
+        document.querySelector('.thirdPanel').style.height = `${window.innerHeight - 75}px`;
+    }
     
     carousal();
 }
 
 function carousal() {
     var index = 0;
-    var urls = ["url('src/person1.jpg')", "url('src/person2.jpg')", "url('src/person3.jpg')"];
+    // var urls = ["url('src/person1.jpg')", "url('src/person2.jpg')", "url('src/person3.jpg')"];
     var names = ["- Olivia Smith, Contractor", "- Alexander Brown, Accountant", "- Sophia Johnson, Real Estate"];
     var comments = [
         '"I recently purchased blinds from Lakeview and I am thoroughly impressed with their quality and design."',
