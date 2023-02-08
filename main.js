@@ -14,6 +14,9 @@ function init() {
         document.querySelector('.thirdPanel').style.height = `${window.innerHeight - 75}px`;
     }
     
+    history.scrollRestoration = "manual";
+    window.scrollTo(0,0);
+    
     carousal();
 }
 
